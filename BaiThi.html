@@ -16,6 +16,14 @@
         .main h1 {
             text-align: center;
         }
+        .personal ,.survey {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px 20px 40px 20px;
+        }
+        .form-personal {
+            margin-top: 20px;
+        }
 
     </style>
 </head>
@@ -24,7 +32,8 @@
 <div class="main">
     <h1>Matrimonial Survey</h1>
     <div class="personal">
-        <form class="form-horizontal">
+        <h2>Personal Details :</h2>
+        <form class="form-horizontal form-personal">
             <div class="form-group">
                 <label for="inputName" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
@@ -44,16 +53,14 @@
                 </div>
             </div>
             <div class="form-group">
-                <label  class="col-sm-2 control-label">Gender</label>
+                <label for="inputAge" class="col-sm-2 control-label">Gender</label>
                 <div class="col-sm-10">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+                    </label>
                 </div>
             </div>
             <div class="form-group">
@@ -96,8 +103,24 @@
             </div>
         </form>
     </div>
-    <div class="servey">
-
+    <div class="survey">
+        <div class="form-group">
+            <label for="inputAge" class="col-sm-6 control-label">How often do you surfing thí site?</label>
+            <div class="col-sm-6">
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1"> Daily
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2"> Weekly
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2"> Monthly
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option2"> ...
+                </label>
+            </div>
+        </div>
     </div>
 </div>
 </body>
